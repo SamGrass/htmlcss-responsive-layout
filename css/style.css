@@ -91,6 +91,12 @@ main > section {
     padding: 70px 0 30px;
     margin-bottom: 0;
 }
+
+/* regole footer */
+footer {
+    background-color: #333333;
+    padding: 50px 0 10px;
+}
 /* BREAKPOINT TABLE */
 @media all and (min-width:650px) {
     /* regole main */
