@@ -122,15 +122,16 @@ main > section {
     .testimonials .row {
         display: flex;
         align-items: center;
-        justify-content: space-around;
-        height: 100%;  
+        justify-content: space-between;
+        height: 100%;
+        column-gap: 20px;  
     }
 
     .testimonials .col-sx {
-        width: 30%;
+        width: calc(30% - 10px);
     }
     .testimonials .col-dx {
-        width: 70%;
+        width: calc(70% - 10px);
     }
 
     /* regole benefits */
@@ -138,11 +139,24 @@ main > section {
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        column-gap: 20px;
     }
 
     .benefits .col {
-        width: calc(50% - 20px);
+        width: calc(50% - 10px);
+    }
+
+    /* regole about us */
+    .about-us .container {
+        display: flex;
+        justify-content: space-between;
+        column-gap: 20px;
+    }
+
+    .about-us .col-dx {
+        width: calc(30% - 10px);
+    }
+    .about-us .col-sx {
+        width: calc(70% - 10px);
     }
 }
 
