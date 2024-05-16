@@ -23,6 +23,12 @@
     max-width: 100%;
 }
 
+.txt {
+    /* debug */
+    background-color: brown;
+    height: 300px;
+    margin-bottom: 40px;
+}
 /* regole header */
 
 header {
@@ -52,6 +58,18 @@ main > section {
     margin-bottom: 40px;
 }
 
+main .col-sx {
+    /* debug */
+    height: 500px;
+    background-color: #b5ffc6;
+}
+
+main .col-dx {
+    /* debug */
+    height: 500px;
+    background-color: #789d28;
+}
+
 /* regole feature */
 
 .feature .col {
@@ -66,14 +84,10 @@ main > section {
 
 .development .col-sx {
     margin-bottom: 20px;
-    /* debug */
-    height: 500px;
-    background-color: #b5ffc6;
 }
 
 /* BREAKPOINT TABLE */
 @media all and (min-width:650px) {
-
     /* regole feature */
     .feature .container {
         display: flex;
@@ -89,6 +103,23 @@ main > section {
     .col.col-x2 {
         width: calc((100% / 3 * 2) - 10px) ;
     }
+
+    /* regole testimonials */
+    .testimonials .row {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        height: 100%;  
+    }
+
+    .testimonials .col-sx {
+        width: 30%;
+    }
+    .testimonials .col-dx {
+        width: 70%;
+    }
+
+    /* regole benefits */
 }
 
 
