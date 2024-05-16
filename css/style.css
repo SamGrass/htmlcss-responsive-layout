@@ -86,6 +86,11 @@ main > section {
     padding: 70px 0 20px;
 }
 
+/* regole get started */
+.get-started {
+    padding: 70px 0 30px;
+    margin-bottom: 0;
+}
 /* BREAKPOINT TABLE */
 @media all and (min-width:650px) {
     /* regole main */
