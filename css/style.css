@@ -23,11 +23,16 @@
     max-width: 100%;
 }
 
-.txt {
+.txt-center {
+    text-align: center;
     /* debug */
     background-color: brown;
     height: 300px;
     margin-bottom: 40px;
+}
+
+.lilac-bg {
+    background-color: #9792e4;
 }
 /* regole header */
 
@@ -58,18 +63,6 @@ main > section {
     margin-bottom: 40px;
 }
 
-main .col-sx {
-    /* debug */
-    height: 500px;
-    background-color: #b5ffc6;
-}
-
-main .col-dx {
-    /* debug */
-    height: 500px;
-    background-color: #789d28;
-}
-
 /* regole feature */
 
 .feature .col {
@@ -79,15 +72,36 @@ main .col-dx {
 /* regole development */
 .development {
     padding: 70px 0 20px;
-    background-color: #9792e4;
 }
 
 .development .col-sx {
     margin-bottom: 20px;
+    /* debug */
+    height: 500px;
+    background-color: #b5ffc6;
+}
+
+/* regole benefits */
+.benefits {
+    padding: 70px 0 20px;
 }
 
 /* BREAKPOINT TABLE */
 @media all and (min-width:650px) {
+    /* regole main */
+
+    main .col-sx {
+        /* debug */
+        height: 500px;
+        background-color: #b5ffc6;
+    }
+    
+    main .col-dx {
+        /* debug */
+        height: 500px;
+        background-color: #789d28;
+    }
+
     /* regole feature */
     .feature .container {
         display: flex;
@@ -120,6 +134,16 @@ main .col-dx {
     }
 
     /* regole benefits */
+    .benefits .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 20px;
+    }
+
+    .benefits .col {
+        width: calc(50% - 20px);
+    }
 }
 
 
@@ -167,5 +191,17 @@ main .col-dx {
         margin-bottom: 0;
         /* debug */
         width: 100%;
+    }
+
+    /* regole benefits */
+    .benefits .row {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        column-gap: 20px;
+    }
+
+    .benefits .col {
+        width: calc(100% / 3 - 20px);
     }
 }
