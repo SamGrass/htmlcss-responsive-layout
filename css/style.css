@@ -8,14 +8,15 @@
 
 .container {
     margin: 0 auto;
-    width: 90%;
+    width: 85%;
 }
 
 .col {
     margin-bottom: 20px;
+    border-radius: 2rem;
     /* debug */
-    min-height: 100px;
-    background-color: aquamarine;
+    height: 500px;
+    background-color: #b5ddff;
 }
 
 .image-100 {
@@ -45,14 +46,48 @@ header .fa-bars {
     color: #fff;
     font-size: 1.5rem;
 }
+
+/* regole main */
+main > section {
+    margin-bottom: 40px;
+}
+/* regole feature */
+
+.feature .col {
+    background-color: #b5ddff;
+}
+/* regole development */
+.development {
+    background-color: #9792e4;
+}
+
 /* BREAKPOINT TABLE */
 @media all and (min-width:650px) {
-    
+
+    /* regole feature */
+    .feature .container {
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 20px;
+        justify-content: space-between;
+    }
+
+    .feature .col {
+        width: calc(100% / 3 - 20px);
+    }
+
+    .col.col-x2 {
+        width: calc((100% / 3 * 2) - 10px) ;
+    }
 }
 
 
 /* BREAKPOINT DESKTOP */
 @media all and (min-width:1100px) {
+    /* regole generali */
+    .container {
+        width: 70%;
+    }
 
     /* regole header */
     #hamburger {
