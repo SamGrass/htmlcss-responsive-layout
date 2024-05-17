@@ -202,6 +202,38 @@ main > section {
     padding: 4rem 0 2rem;
 }
 
+#benefits h4 {
+    margin-bottom: 4rem;
+    color: #fff;
+}
+
+#benefits .col {
+    background-color: #fff;
+    color: black;
+}
+
+#benefits .col p {
+    color: #737373;
+}
+
+#benefits .numbers {
+    font-size: 4.5rem;
+    font-weight: 700;
+    color: #9792e4;
+}
+
+#benefits  .btn {
+    color: #fff;
+    font-weight: 600;
+    font-size: 1rem;
+    padding: 0.5em 2.5em;
+    border-radius: 1em;
+    letter-spacing: 0.2em;
+}
+
+#benefits h5 {
+    color: #9792e4;
+}
 /* regole get started */
 #get-started {
     padding: 4rem 0 2rem;
@@ -271,7 +303,6 @@ footer {
     #benefits .col {
         width: calc(50% - 1rem);
     }
-
 
     /* regole about us */
     #about-us .container {
