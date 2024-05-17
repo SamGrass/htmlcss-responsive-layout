@@ -15,8 +15,6 @@
     margin-bottom: 2rem;
     border-radius: 2rem;
     padding: 1.5rem;
-    /* debug */
-    background-color: #b5ddff;
 }
 
 .image-100 {
@@ -39,6 +37,14 @@
     background-color: #9792e4;
 }
 
+.btn .fa-brands {
+    padding-right: 1rem;
+}
+
+h3 {
+    font-size: 4rem;
+}
+
 h4 {
     font-size: 2.4rem;
 }
@@ -48,7 +54,7 @@ h5 {
 }
 
 p {
-    line-height: 1.5em;
+    line-height: 2em;
 }
 
 .margin-bt-1_3 > * {
@@ -72,6 +78,15 @@ p {
     letter-spacing: 0;
     width: 2em;
 }
+
+.btn-short  {
+    font-weight: 400;
+    font-size: 1rem;
+    padding: 0.5em;
+    border-radius: 1em;
+    letter-spacing: 0;
+}
+
 .txt-bg-white {
     background-color: #fff;
     color: black;
@@ -84,7 +99,7 @@ p {
 
 .txt-bg-lilac {
     background-color: #9792e4;
-    color: black;
+    color: #fff;
 }
 /* regole header */
 
@@ -163,6 +178,10 @@ main > section {
     font-style: italic;
 }
 
+#development .btn {
+    color: black;
+}
+
 /* regole testimonials */
 #testimonials h4 {
     color: #9792e4;
@@ -197,6 +216,7 @@ main > section {
 #testimonials .col h5 {
     letter-spacing: 0.25rem;
 }
+
 /* regole benefits */
 #benefits {
     padding: 4rem 0 2rem;
@@ -223,7 +243,6 @@ main > section {
 }
 
 #benefits  .btn {
-    color: #fff;
     font-weight: 600;
     font-size: 1rem;
     padding: 0.5em 2.5em;
@@ -234,6 +253,37 @@ main > section {
 #benefits h5 {
     color: #9792e4;
 }
+
+/* regole about us */
+#about-us h3 {
+    color: #9792e4;
+}
+
+#about-us p {
+    font-size: 1.2rem;
+}
+
+#container-quote {
+    width: 70%;
+    position: relative;
+}
+
+#container-quote .fa-quote-left {
+    color: #9792e4;
+    font-size: 4rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+#img-about-us{ 
+    border-radius: 50%;
+}
+
+#about-us .col-dx h5 {
+    color: #9792e4;
+}
+
 /* regole get started */
 #get-started {
     padding: 4rem 0 2rem;
@@ -314,9 +364,23 @@ footer {
     #about-us .col-dx {
         width: calc(30% - 1rem);
     }
+
     #about-us .col-sx {
         width: calc(70% - 1rem);
     }
+
+    #container-quote {
+        width: 100%;
+    }
+
+    #container-quote .fa-quote-left {
+        color: #9792e4;
+        font-size: 3rem;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
 }
 
 
@@ -338,19 +402,15 @@ footer {
         display: flex;
     }
 
-    header .btn-short  {
-        font-weight: 400;
-        font-size: 1.1rem;
-        padding: 0.5em;
-        border-radius: 1em;
-        letter-spacing: 0;
-    }
-
     header ul {
         list-style: none;
         display: flex;
         gap: 1.5rem;
         align-items: center;
+    }
+
+    header .btn-short  {
+        font-size: 1.1rem;
     }
 
     header a {
