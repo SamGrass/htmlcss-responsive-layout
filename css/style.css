@@ -29,10 +29,6 @@ p {
 
 .txt-center {
     text-align: center;
-    /* debug */
-    background-color: brown;
-    height: 300px;
-    margin-bottom: 2rem;
 }
 
 .lilac-bg {
@@ -113,6 +109,11 @@ main > section {
 
 #feature .col.col-x2 {
     padding: 1.5rem 1.5rem 0 1.5rem;
+}
+
+#feature .fa-solid {
+    font-size: 5rem;
+    color: #0084fd;
 }
 
 /* regole development */
