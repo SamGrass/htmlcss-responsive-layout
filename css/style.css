@@ -324,8 +324,12 @@ main > section {
 footer {
     background-color: #333333;
     padding: 3rem 0 0.75rem;
+    color: #fff
 }
 
+footer a {
+    color: #9792e4;
+}
 
 /* BREAKPOINT TABLE */
 @media all and (min-width:650px) {
@@ -413,6 +417,11 @@ footer {
 
     /* regole get started */
     #get-started .container {
+        max-width: 600px;
+    }
+
+    /* regole footer */
+    footer .container {
         max-width: 600px;
     }
 }
