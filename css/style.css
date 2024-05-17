@@ -21,7 +21,6 @@
 
 .image-100 {
     max-width: 100%;
-    display: block;
 }
 
 .txt-center {
@@ -126,6 +125,9 @@ main > section {
     padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
+#feature .image-100 {
+    display: block;
+}
 #feature .fa-solid {
     font-size: 5rem;
     color: #0084fd;
@@ -186,7 +188,7 @@ footer {
     }
 
     #feature .col.col-x2 {
-        width: calc((100% / 3 * 2) - 10px) ;
+        width: calc((100% / 3 * 2) - 0.5rem) ;
     }
 
     #feature #phone-image {
@@ -194,7 +196,11 @@ footer {
     }
 
     /* regole development */
-    
+    #development h4 {
+        font-size: 4.3rem;
+        margin-bottom: 0.8em;
+    }
+
     /* regole testimonials */
     #testimonials .row {
         display: flex;
@@ -205,10 +211,10 @@ footer {
     }
 
     #testimonials .col-sx {
-        width: calc(30% - 10px);
+        width: calc(30% - 1rem);
     }
     #testimonials .col-dx {
-        width: calc(70% - 10px);
+        width: calc(70% - 1rem);
     }
 
     /* regole benefits */
@@ -219,7 +225,7 @@ footer {
     }
 
     #benefits .col {
-        width: calc(50% - 10px);
+        width: calc(50% - 1rem);
     }
 
     /* regole about us */
@@ -230,10 +236,10 @@ footer {
     }
 
     #about-us .col-dx {
-        width: calc(30% - 10px);
+        width: calc(30% - 1rem);
     }
     #about-us .col-sx {
-        width: calc(70% - 10px);
+        width: calc(70% - 1rem);
     }
 }
 
@@ -295,13 +301,22 @@ footer {
     #development .container {
         width: 60%;
         display: flex;
+        gap: 2rem;
+        justify-content: space-between;
     }
 
     #development .col-sx,#development .col-dx {
-        width: 50%;
-        /* debug */
-        height: 700px;
-        background-color: #0084fd;
+        width: calc(50% - 2rem);
+        margin-bottom: 2rem;
+    }
+
+    #development h4 {
+        font-size: 1.7rem;
+        margin-bottom: 1.3em;
+    }
+
+    #development .col-sx p {
+        margin-bottom: 0;
     }
 
     #development .col-dx {
@@ -311,8 +326,6 @@ footer {
 
     #development .col-dx .col {
         margin-bottom: 0;
-        /* debug */
-        width: 100%;
     }
 
     /* regole benefits */
