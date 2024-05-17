@@ -6,6 +6,9 @@
     font-family: "PT Sans", sans-serif;
 }
 
+p {
+    line-height: 1.5em;
+}
 .container {
     margin: 0 auto;
     width: 85%;
@@ -14,13 +17,14 @@
 .col {
     margin-bottom: 2rem;
     border-radius: 2rem;
+    padding: 1.5rem;
     /* debug */
-    height: 500px;
     background-color: #b5ddff;
 }
 
 .image-100 {
     max-width: 100%;
+    display: block;
 }
 
 .txt-center {
@@ -35,15 +39,33 @@
     background-color: #9792e4;
 }
 
+h5 {
+    font-size: 1.5rem;
+}
+
+.margin-bt-1_3 > * {
+    margin-bottom: 1.3em;
+}
+
 /* regole bottoni */
 .btn {
-    padding: 1em 2.5em;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1.3rem;
+    padding: 0.3em 3em;
     border-radius: 1em;
+    letter-spacing: 0.2em;
 }
 
 .txt-bg-white {
     background-color: #fff;
     color: black;
+}
+
+.txt-bg-blue {
+    background-color: #0084fd;
+    color: #fff;
 }
 /* regole header */
 
@@ -75,9 +97,22 @@ main > section {
 }
 
 /* regole feature */
+#feature h5 {
+    color: #0084fd;
+}
+
+#feature p {
+    color: #5a6e7f;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
 
 #feature .col {
     background-color: #b5ddff;
+}
+
+#feature .col.col-x2 {
+    padding: 1.5rem 1.5rem 0 1.5rem;
 }
 
 /* regole development */
@@ -108,21 +143,11 @@ footer {
     background-color: #333333;
     padding: 3rem 0 0.75rem;
 }
+
+
 /* BREAKPOINT TABLE */
 @media all and (min-width:650px) {
     /* regole main */
-
-    main .col-sx {
-        /* debug */
-        height: 500px;
-        background-color: #b5ffc6;
-    }
-    
-    main .col-dx {
-        /* debug */
-        height: 500px;
-        background-color: #789d28;
-    }
 
     /* regole feature */
     #feature .container {
@@ -140,6 +165,9 @@ footer {
         width: calc((100% / 3 * 2) - 10px) ;
     }
 
+    #feature #phone-image {
+       max-width: 350px;
+    }
     /* regole testimonials */
     #testimonials .row {
         display: flex;
@@ -183,8 +211,10 @@ footer {
 }
 
 
+
+
 /* BREAKPOINT DESKTOP */
-@media all and (min-width:1100px) {
+@media all and (min-width:1200px) {
     /* regole generali */
     .container {
         width: 70%;
@@ -199,19 +229,39 @@ footer {
         display: flex;
     }
 
-    header .btn {
+    header .btn-short  {
+        font-weight: 400;
+        font-size: 1.1rem;
         padding: 0.5em;
+        border-radius: 1em;
+        letter-spacing: 0;
     }
 
     header ul {
         list-style: none;
         display: flex;
         gap: 1.5rem;
+        align-items: center;
     }
 
     header a {
         text-decoration: none;
         color: #fff;
+        font-size: 1.1rem;
+    }
+
+    /* regole feature */
+    #feature .row {
+        display: flex;
+    }
+
+    #feature .col-sx,  #feature .col-dx {
+        width: 50%;
+    }
+
+    #feature #phone-image {
+        align-self: flex-end;
+        margin: 3% 2rem 0;
     }
     /* regole development */
     #development .container {
