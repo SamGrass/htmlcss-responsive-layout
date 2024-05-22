@@ -277,7 +277,7 @@ main > section {
 
 #container-quote .fa-quote-left {
     color: #9792e4;
-    font-size: 4rem;
+    font-size: calc(2rem + 7vw);
     position: absolute;
     top: 0;
     right: 0;
@@ -409,7 +409,7 @@ footer a {
 
     #container-quote .fa-quote-left {
         color: #9792e4;
-        font-size: 3rem;
+        font-size: calc(2rem + 7vw);
         position: absolute;
         top: 0;
         right: 0;
